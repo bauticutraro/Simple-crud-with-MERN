@@ -6,6 +6,7 @@ const colors = require('colors');
 const morgan = require('morgan');
 const rateLimit = require('express-rate-limit');
 const db = require('./utils/db');
+const cleanDB = require('./utils/cleanDB');
 const app = express();
 
 const PORT = process.env.PORT || 5000;
